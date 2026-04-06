@@ -1,0 +1,37 @@
+# NAME: Claude 规则集
+# UPDATED: 2026-03-17
+# DOMAIN: 5
+# DOMAIN-SUFFIX: 3
+# IP-CIDR: 1
+# IP-CIDR6: 1
+# TOTAL: 10
+
+# >>> [Domain] 精确匹配
+DOMAIN,2.datadog.pool.ntp.org
+DOMAIN,api3.siftscience.com
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,browser-intake-us5-datadoghq.com
+DOMAIN,cdn.usefathom.com
+DOMAIN,o1158394.ingest.us.sentry.io
+
+# >>> [Domain-Suffix] 后缀匹配
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.app
+DOMAIN-SUFFIX,claude.site
+DOMAIN-SUFFIX,claudecdn.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,pool.ntp.org
+DOMAIN-SUFFIX,sentry.io
+DOMAIN-SUFFIX,stripe.com
+
+# >>> [Domain-Keyword] 关键字匹配
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,claude
+
+# >>> [IP-Address] 静态 IP 匹配
+IP-CIDR,160.79.104.0/23,no-resolve
+IP-CIDR6,2607:6bc0::/48,no-resolve
+IP-ASN,399358,no-resolve
